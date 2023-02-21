@@ -12,7 +12,7 @@
 
 Gambar asli sebelum diproses:
 
-<img src="xray.jpg" alt="xray.jpg" width="50%" height="50%">
+<img src="xray.jpg" alt="xray.jpg" width="30%" height="30%">
 
 
 ```matlab
@@ -40,7 +40,7 @@ imwrite(I_hist, 'xray_hist.jpg');
 
 Hasil gambar setelah diproses dengan histogram:
 
-<img src="xray_hist.jpg" alt="xray_hist.jpg" width="50%" height="50%">
+<img src="xray_hist.jpg" alt="xray_hist.jpg" width="30%" height="30%">
 
 
 ### Perbaikan dengan Proses Negatif
@@ -62,7 +62,7 @@ imwrite(I_neg, 'xray_neg.jpg');
 
 Hasil gambar setelah diproses dengan proses negatif:
 
-<img src="xray_neg.jpg" alt="xray_neg_.jpg" width="50%" height="50%">
+<img src="xray_neg.jpg" alt="xray_neg_.jpg" width="30%" height="30%">
 
 ### Perbaikan dengan memanfaatkan Clipping
 
@@ -83,7 +83,7 @@ imshow(I_clipped2)
 
 Hasil gambar setelah diproses:
 
-<img src="xray_clip.jpg" alt="xray_clip.jpg" width="50%" height="50%">
+<img src="xray_clip.jpg" alt="xray_clip.jpg" width="30%" height="30%">
 
 
 
