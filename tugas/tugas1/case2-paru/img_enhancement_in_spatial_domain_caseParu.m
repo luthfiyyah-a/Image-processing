@@ -5,7 +5,7 @@
 % Selfira Ayu
 
 % membaca gambar
-I = imread('xray.jpg');
+I = imread('paru.jpeg');
 figure('Name', 'Gambar Asli')
 imshow(I)
 title('X-ray Asli')
@@ -18,7 +18,7 @@ figure('Name', 'Histogram Equalization')
 imshow(I_hist)
 title('X-ray setelah histogram equalization')
 % menyimpan gambar hasil proses histogram
-imwrite(I_hist, 'xray_hist.jpg');
+imwrite(I_hist, 'paru_hist.jpg');
 
 % PROSES NEGATIF
 % memproses gambar dengan proses negatif
@@ -29,16 +29,16 @@ I_neg = L - I;
 figure('Name', 'Proses negatif')
 imshow(I_neg)
 % menyimpan gambar hasil proses
-imwrite(I_neg, 'xray_neg.jpg');
+imwrite(I_neg, 'paru_neg.jpg');
 
 % ADJUST: CLIPPING
 I_clipped = imadjust(I, [0.2 0.8]);
 figure('Name', 'Adjust: CLIPPING')
 imshow(I_clipped)
 % menyimpan gambar hasil proses
-imwrite(I_clipped, 'xray_clip.jpg');
+imwrite(I_clipped, 'paru_clip.jpg');
 % clipping ke 2 ini sebagai contoh perbandingan
 I_clipped2 = imadjust(I, [0.4 0.6]);
 figure('Name', 'Adjust: CLIPPING-2')
 imshow(I_clipped2)
-imwrite(I_clipped2, 'xray_clip2.jpg');
+imwrite(I_clipped2, 'paru_clip2.jpg');
