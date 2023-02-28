@@ -42,6 +42,17 @@ Hasil gambar setelah diproses dengan histogram:
 
 <img src="xray_hist.jpg" alt="xray_hist.jpg" width="30%" height="30%">
 
+<div style="display:flex;flex-direction:row;">
+  <div style="margin-right:20px;">
+    <h2>Original</h2>
+    <img src="xray.jpg" width="30%" height="30%" alt="xray.jpg"/>
+  </div>
+  <div>
+    <h2>Histogram</h2>
+    <img src="xray_hist.jpg" width="30%" height="30%" alt="xray_hist.jpg" />
+  </div>
+</div>
+
 
 ### Perbaikan dengan Proses Negatif
 
