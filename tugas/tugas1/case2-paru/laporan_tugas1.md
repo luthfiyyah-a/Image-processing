@@ -12,7 +12,7 @@
 
 Gambar asli sebelum diproses:
 
-<img src="paru.jpg" alt="paru.jpg" width="30%" height="30%">
+<img src="paru.jpeg" alt="paru.jpeg" width="30%" height="30%">
 
 
 ```matlab
