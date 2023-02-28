@@ -42,7 +42,7 @@ Hasil gambar setelah diproses dengan histogram:
 
 <img src="xray_hist.jpg" alt="xray_hist.jpg" width="30%" height="30%">
 
-<div style="display:flex;flex-direction:row;">
+<div style="display:flex;flex-direction:row;align-items:center;">
   <div style="margin-right:20px;">
     <h2>Original</h2>
     <img src="xray.jpg" width="30%" height="30%" alt="xray.jpg"/>
