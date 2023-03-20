@@ -236,4 +236,5 @@ Berikut operasi-operasi menggunakan method dari cv2
 # Source
 
 [https://docs.opencv.org/3.4/de/dbc/tutorial_py_fourier_transform.html](https://docs.opencv.org/3.4/de/dbc/tutorial_py_fourier_transform.html)
+
 [https://medium.com/@devangdayal/frequency-domain-filtering-on-an-image-using-opencv-26bfcc97e23b](https://medium.com/@devangdayal/frequency-domain-filtering-on-an-image-using-opencv-26bfcc97e23b)
