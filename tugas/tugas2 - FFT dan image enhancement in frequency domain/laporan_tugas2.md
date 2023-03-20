@@ -158,7 +158,7 @@ Berikut operasi-operasi menggunakan method dari cv2
 - Gaussian blur (Gaussian smoothing) — memakai cv2.GaussianBlur()
     
     hasil:
-    <img src="result_frequency-filter_gaussian smoothing.png" alt="filter gaussian smoothing" width="80%" height="80%">
+    <img src="result_frequency-filter_gaussian smoothing.png" alt="filter gaussian smoothing" width="50%" height="50%">
 
 - Mean Filtering Techniques
     
@@ -173,7 +173,7 @@ Berikut operasi-operasi menggunakan method dari cv2
     ```
     
     hasil:
-    <img src="result_frequency-filter_Mean Filtered Image.png" alt="mean filter">
+    <img src="result_frequency-filter_Mean Filtered Image.png" alt="mean filter" width="50%" height="50%">
 
 - Median filtering techniques
     
@@ -187,7 +187,7 @@ Berikut operasi-operasi menggunakan method dari cv2
     ```
     
     hasil:
-    <img src="result_frequency-filter_Median Filter.png" alt="median filter">
+    <img src="result_frequency-filter_Median Filter.png" alt="median filter" width="50%" height="50%">
     
 
 - Bilateral Filter
@@ -203,7 +203,7 @@ Berikut operasi-operasi menggunakan method dari cv2
     ```
     
     hasil:
-    <img src="result_frequency-filter_Bilateral Filter.png" alt="bilateral">
+    <img src="result_frequency-filter_Bilateral Filter.png" alt="bilateral" width="50%" height="50%">
 
 - Teknik Frequency Band Filtering - untuk High Band Pass Filter
     
@@ -217,7 +217,7 @@ Berikut operasi-operasi menggunakan method dari cv2
     ```
     
     hasil:
-    <img src="result_frequency-filter_High Pass.png" alt="high pass filter">
+    <img src="result_frequency-filter_High Pass.png" alt="high pass filter" width="50%" height="50%">
     
 
 - Teknik Frequency Band Filtering - untuk Low Band Pass Filter
@@ -231,7 +231,7 @@ Berikut operasi-operasi menggunakan method dari cv2
     ```
     
     hasil:
-    <img src="result_frequency-filter_Low Pass.png" alt="low pass filter">
+    <img src="result_frequency-filter_Low Pass.png" alt="low pass filter" width="50%" height="50%">
 
 # Source
 
