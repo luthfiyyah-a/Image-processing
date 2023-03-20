@@ -5,13 +5,12 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 # read the input image
-img = cv.imread('demofadhil.jpg', cv.IMREAD_GRAYSCALE)
+img = cv.imread('kentang.jpg', cv.IMREAD_GRAYSCALE)
 assert img is not None, "file could not be read, check with os.path.exists()"
 
 f = np.fft.fft2(img)
 fshift = np.fft.fftshift(f)
 magnitude_spectrum = 20*np.log(np.abs(fshift))
-
 
 # visualize the original image and the magnitude spectrum
 plt.subplot(121),plt.imshow(img, cmap = 'gray')
@@ -28,7 +27,7 @@ f_ishift = np.fft.ifftshift(fshift)
 img_back = np.fft.ifft2(f_ishift)
 img_back = np.real(img_back)
 
-
+# visualize the image
 plt.subplot(131),plt.imshow(img, cmap = 'gray')
 plt.title('Input Image'), plt.xticks([]), plt.yticks([])
 plt.subplot(132),plt.imshow(img_back, cmap = 'gray')
