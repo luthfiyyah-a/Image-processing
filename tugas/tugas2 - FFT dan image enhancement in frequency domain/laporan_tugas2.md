@@ -156,7 +156,12 @@ Berikut operasi-operasi menggunakan method dari cv2
     
 
 - Gaussian blur (Gaussian smoothing) — memakai cv2.GaussianBlur()
-    
+    ```python
+    gaussBlur = cv2.GaussianBlur(img,(5,5),cv2.BORDER_DEFAULT)
+    cv2.imshow("Gaussian Smoothing",np.hstack((img,gaussBlur)))
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
+    ```
     hasil:
     <img src="result_frequency-filter_gaussian smoothing.png" alt="filter gaussian smoothing" width="50%" height="50%">
 
