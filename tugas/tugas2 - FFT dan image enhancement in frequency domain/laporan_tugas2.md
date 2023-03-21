@@ -8,7 +8,7 @@ NRP: 5025201090
 
 Pada kali ini, gambar yang digunakan adalah gambar ini
 
-<img src="kentang.jpg" alt="gambar original" width="50%" height="50%">
+<img src="kentang.jpg" alt="gambar original" width="30%" height="30%">
 
 # FFT — Fast Fourier Transform
 
