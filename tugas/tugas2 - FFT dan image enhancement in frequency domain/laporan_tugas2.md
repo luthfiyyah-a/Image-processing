@@ -1,6 +1,7 @@
-<aside>
-👩‍🎓 Nama: Luthfiyyah hanifah amari ||
-NRP: 5025201090
+## Identitas Kelompok 
+👩‍🎓 
+Luthfiyyah hanifah amari - 5025201090
+Selfira Ayu Sheehan - 5025201174
 
 </aside>
 
