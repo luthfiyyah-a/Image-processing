@@ -1,5 +1,5 @@
 <aside>
-👩‍🎓 Nama: Luthfiyyah hanifah amari
+👩‍🎓 Nama: Luthfiyyah hanifah amari ||
 NRP: 5025201090
 
 </aside>
