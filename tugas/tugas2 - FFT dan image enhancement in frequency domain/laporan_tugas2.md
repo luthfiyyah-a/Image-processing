@@ -1,5 +1,8 @@
 ## Identitas Kelompok 
 👩‍🎓 
+Mata Kuliah: Pengolahan Citra Digital
+Dosen Pengampu: Prof.Ir. Handayani Tjandrasa, M.Sc Ph.D
+Anggota Kelompok:
 Luthfiyyah hanifah amari - 5025201090
 Selfira Ayu Sheehan - 5025201174
 
