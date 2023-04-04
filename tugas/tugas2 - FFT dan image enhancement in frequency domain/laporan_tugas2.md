@@ -37,6 +37,7 @@ from matplotlib import pyplot as plt
 img = cv.imread('kentang.jpg', cv.IMREAD_GRAYSCALE)
 assert img is not None, "file could not be read, check with os.path.exists()"
 
+# Terapkan transformasi fourier
 f = np.fft.fft2(img)
 fshift = np.fft.fftshift(f)
 magnitude_spectrum = 20*np.log(np.abs(fshift))
