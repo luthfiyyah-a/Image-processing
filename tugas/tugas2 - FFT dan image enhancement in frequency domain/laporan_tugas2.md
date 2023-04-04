@@ -55,6 +55,7 @@ Hasilnya:
 
 Kita bisa lebih melihat daerah yang lebih putih di tengah yang menunjukkan menunjukkan frequnsi rendah.
 
+### High-Pass Filter (menggunakan Numpy)
 Jadi kita menemukan transform frequensi. Sekarang kita lakukan beberapa operasi di domain frequensi, seperti high pass filtering dan rekontruksi gambar, yaitu menemukan inverse DFT. untuk itu kamu dengan mudah menghilangkan frequensi rendah dengan masking dengan window segi empat dari ukuran 60x60. Lalu, terapkan pergeseran inverse menggunakan np.fft.iffftshift() sehingga komponen DC kembali berada di pojok kiri atas. lalu temukan inverse FFT menggunakan fungsi **np.iffft2()**. Hasilnya, lagi-lagi akan menjadi bilangan kompleks. kita bisa mengambil nilai mutlaknya.
 
 ```python
@@ -81,7 +82,7 @@ plt.show()
 Hasilnya:
 <img src="result_fourier-transform_inverseDFT.png" alt="inverseDFT">
 
-hasilnya menunjukkan High Pass filtering merupakan operasi deteksi tepi. Ini menunjukkan bahwa sebagian besar data gambar hadir di wilayah spektrum frekuensi rendah. Bagaimanapun kita telah melihat bagaimana menemukan DFT, IDFT dll di Numpy. Sekarang mari kita lihat bagaimana melakukannya di OpenCV.
+hasilnya menunjukkan **High Pass filtering merupakan operasi deteksi tepi**. Ini menunjukkan bahwa sebagian besar data gambar hadir di wilayah spektrum frekuensi rendah. Bagaimanapun kita telah melihat bagaimana menemukan DFT, IDFT dll di Numpy. Sekarang mari kita lihat bagaimana melakukannya di OpenCV.
 
 ## Fourier Transform pada OpenCV
 
@@ -111,8 +112,8 @@ plt.show()
 
 <img src="result_fourier-transform_opencv.png" alt="Fourier-transform_opencv">
 
-
-Jadi, sekarang kita perlu melakukan inverse DFT. sebelumnya, kita membuat sebuah high pass filter. sekarang kita ingin melihat bagaimana remove konten high frequency pada gambar, yakni kita menggunakan Low pass filter pada gambar. ini membuat gambar blur. untuk ini, kita membuat sebuah mask terlebih dahulu menggunakan high value (1) pada low frequency (frequensi rendah),yakni kita pass sebuah konten low frequency, dan 0 pada daerah High Frequency.
+### Low-pass Filter
+Jadi, sekarang kita perlu melakukan inverse DFT. sebelumnya, kita membuat sebuah high pass filter. sekarang kita ingin melihat bagaimana remove konten high frequency pada gambar, yakni kita **menggunakan Low pass filter pada gambar. Ini membuat gambar blur**. Untuk ini, kita membuat sebuah mask terlebih dahulu menggunakan high value (1) pada low frequency (frequensi rendah),yakni kita pass sebuah konten low frequency, dan 0 pada daerah High Frequency.
 
 ```python
 rows, cols = img.shape
