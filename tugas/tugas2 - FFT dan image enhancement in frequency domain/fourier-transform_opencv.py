@@ -5,7 +5,7 @@ import cv2 as cv
 from matplotlib import pyplot as plt
 
 # read the input
-img = cv.imread('demofadhil.jpg', cv.IMREAD_GRAYSCALE)
+img = cv.imread('kentang.jpg', cv.IMREAD_GRAYSCALE)
 assert img is not None, "file could not be read, check with os.path.exists()"
 
 # calculating the discrete Fourier transform

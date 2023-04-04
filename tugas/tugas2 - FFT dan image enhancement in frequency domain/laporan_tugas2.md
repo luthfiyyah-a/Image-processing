@@ -109,6 +109,9 @@ plt.title('Magnitude Spectrum'), plt.xticks([]), plt.yticks([])
 plt.show()
 ```
 
+<img src="result_fourier-transform_opencv.png" alt="Fourier-transform_opencv">
+
+
 Jadi, sekarang kita perlu melakukan inverse DFT. sebelumnya, kita membuat sebuah high pass filter. sekarang kita ingin melihat bagaimana remove konten high frequency pada gambar, yakni kita menggunakan Low pass filter pada gambar. ini membuat gambar blur. untuk ini, kita membuat sebuah mask terlebih dahulu menggunakan high value (1) pada low frequency (frequensi rendah),yakni kita pass sebuah konten low frequency, dan 0 pada daerah High Frequency.
 
 ```python
@@ -131,6 +134,8 @@ plt.subplot(122),plt.imshow(img_back, cmap = 'gray')
 plt.title('Magnitude Spectrum'), plt.xticks([]), plt.yticks([])
 plt.show()
 ```
+<img src="result_fourier-transform_opencv_img.png" alt="Fourier-transform_opencv">
+
 
 # Frequency Domain Filtering on an Image using OpenCV
 
