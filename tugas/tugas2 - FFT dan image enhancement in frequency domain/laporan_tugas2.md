@@ -58,9 +58,12 @@ Kita bisa lebih melihat daerah yang lebih putih di tengah yang menunjukkan menun
 Jadi kita menemukan transform frequensi. Sekarang kita lakukan beberapa operasi di domain frequensi, seperti high pass filtering dan rekontruksi gambar, yaitu menemukan inverse DFT. untuk itu kamu dengan mudah menghilangkan frequensi rendah dengan masking dengan window segi empat dari ukuran 60x60. Lalu, terapkan pergeseran inverse menggunakan np.fft.iffftshift() sehingga komponen DC kembali berada di pojok kiri atas. lalu temukan inverse FFT menggunakan fungsi **np.iffft2()**. Hasilnya, lagi-lagi akan menjadi bilangan kompleks. kita bisa mengambil nilai mutlaknya.
 
 ```python
+# Terapkan high-pass filter pada spektrum frequensi
 rows, cols = img.shape
 crow,ccol = rows//2 , cols//2
 fshift[crow-30:crow+31, ccol-30:ccol+31] = 0
+
+# Terapkan transformasi balik Fourier pada spektrum frequensi yang telah difilter
 f_ishift = np.fft.ifftshift(fshift)
 img_back = np.fft.ifft2(f_ishift)
 img_back = np.real(img_back)

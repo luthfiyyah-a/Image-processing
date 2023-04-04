@@ -8,6 +8,7 @@ from matplotlib import pyplot as plt
 img = cv.imread('kentang.jpg', cv.IMREAD_GRAYSCALE)
 assert img is not None, "file could not be read, check with os.path.exists()"
 
+# Terapkan transformasi Fourier
 f = np.fft.fft2(img)
 fshift = np.fft.fftshift(f)
 magnitude_spectrum = 20*np.log(np.abs(fshift))
@@ -20,9 +21,12 @@ plt.title('Magnitude Spectrum'), plt.xticks([]), plt.yticks([])
 plt.show()
 
 
+# Terapkan high-pass filter pada spektrum frequensi
 rows, cols = img.shape
 crow,ccol = rows//2 , cols//2
 fshift[crow-30:crow+31, ccol-30:ccol+31] = 0
+
+# Terapkan transformasi balik Fourier pada spektrum frequensi yang telah difilter
 f_ishift = np.fft.ifftshift(fshift)
 img_back = np.fft.ifft2(f_ishift)
 img_back = np.real(img_back)
